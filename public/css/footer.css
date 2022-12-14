@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrado {
+    padding: 2rem 3rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.centrado i {
+    font-size: 2em;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    color: #03264C;
+}
+
+.center i:hover {
+    color: #0022AA
+
+}
+
+.centrado h2 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 16px 16px;
+}
+
+.centrado p {
+    text-align: center;
+    line-height: 35px;
+}
+
+@media (min-width:761px){
+    .footer {
+        flex-direction: row;
+        justify-content: space-between
+
+    }
+}
