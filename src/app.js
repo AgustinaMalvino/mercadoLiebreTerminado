@@ -7,8 +7,9 @@ const app = express();
 
 app.use (express.static('./public'));
 
-app.listen(3000,() => {
-    console.log('servidor corriendo en el puerto http://localhost:3000');
+const port = process.env.PORT 
+app.listen(port,() => {
+    console.log('servidor corriendo en el puerto http://localhost:' + port);
 
 });
 
