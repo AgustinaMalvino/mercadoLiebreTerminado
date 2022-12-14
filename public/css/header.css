@@ -2,19 +2,68 @@ header {
     background-color:#EAC926; 
 }
 
-.logo{
-    width: 500px;
-    height: 30%;
+.logo-barra-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 32px 0;
 }
 
+.logo{
+    width: 45%;
+    height: 30%;
+    display: inline;
+    position: relative;
+}
 
-.fa-magnifying-glass {
-    background-color: #ebebeb;
-    padding: 3px;
+.barra-busqueda{
+    background-color: #ffffff;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+}
+
+.barra-busqueda form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.barra-busqueda input{
+    border: none;
+    outline: none;
+}
+
+.campo-busqueda{
+    width: 100%;
+    display: inline;
+}
+
+.campo-busqueda input{
+    width: 100%
+}
+
+.lupa{
+    justify-self: flex-end;
+    display: inline;
+}
+
+.lupa button{
+    border: none;
+    background-color: white;
+}
+
+.lupa button:hover{
+    cursor: pointer;
 }
 
 .compra {
     text-align: center;
+    width: 100%;
+    padding: 16px;
 }
 
 a {
@@ -35,14 +84,12 @@ a {
     border-radius: 7px;
 }
 
-.banner {
-    width: 100%;
+nav{
+    display: none;
 }
 
-@media (max-width: 361px){
-    .izq-der {
-     display: none;
-    }
+.banner {
+    width: 100%;
 }
 
 @media (min-width: 361px){
@@ -50,46 +97,37 @@ a {
         display: none;
     }
 
-    .logo-barra-texto{
-        display:flex;
-        justify-content: space-between;
-      
+    .logo{
+        width: 30%;
     }
 
-    .barra {
-        max-width: 25%;
-        max-height: 25px;
-    }
-
-    .fa-magnifying-glass {
-        padding-left: 0px;
+    .barra-busqueda{
+        width: 30%;
     }
 
     .compra {
-        max-width: 25%;
-        font-size: small;
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
     }
 
-    .izq-der {
+    nav{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        padding-bottom: 24px;
     }
 
-    .izq-der ul {
+    .nav-izq-der{
+        width: 40%;
         display: flex;
-    }
-
-    .izq-der li {
-        margin: 0px 5px;
+        justify-content: space-around;
+        text-align: center;
     }
 }
 
 @media (min-width: 761px){
-    .logo-barra-texto, .izq-der{
-        max-width: 1200px;
-        margin: auto;
-        align-items: center;
-    }
 
     .izq-der{
         margin-top: 40px 

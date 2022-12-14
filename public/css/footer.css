@@ -11,14 +11,12 @@
 }
 
 .centrado i {
-    font-size: 2em;
-    line-height: 35px;
-    display: flex;
-    justify-content: center;
+    font-size: 2rem;
     color: #03264C;
+    padding-bottom: 4px;
 }
 
-.center i:hover {
+.centrado i:hover {
     color: #0022AA
 
 }
